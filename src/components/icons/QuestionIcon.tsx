@@ -1,8 +1,12 @@
+interface QuestionIconProps {
+  size?: number;
+  color?: string;
+}
 
 export default function QuestionIcon({
   size = 24,
   color = "currentColor",
-}){
+}: QuestionIconProps) {
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"

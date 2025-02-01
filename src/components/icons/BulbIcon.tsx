@@ -1,8 +1,12 @@
+interface BulbIconProps {
+  size?: number;
+  color?: string;
+}
 
 export default function BulbIcon({
   size = 24,
   color = "currentColor",
-}){
+}: BulbIconProps) {
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"

@@ -13,13 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "layout title",
+  title: "Coura - Create your own aura",
   description: "Generasadasddted by create next app",
+  keywords: 'Next.js, 웹 개발, SEO',
   icons: {
     icon: "/asd.ico",//경로 이렇게
   },
-  keywords: 'Next.js, 웹 개발, SEO',
-  robots: 'hihi, alsa',
+  // robots: 'hihi, alsa',
+  //todo
 };
 
 export default function RootLayout({
