@@ -11,8 +11,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
       },
     },
   },
+  safelist: [
+    'p-0','p-4'
+  ],
   plugins: [],
 } satisfies Config;
