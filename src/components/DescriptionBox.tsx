@@ -13,11 +13,11 @@ const DescriptionBox = ({
   icon,
 }: DescriptionBoxProps) => {
   return (
-    <div className="flex flex-1 gap-3 rounded-lg border border-primary bg-background p-4 flex-col">
+    <div className="min-h-[140px] flex flex-1 gap-4 rounded-lg border border-primary bg-background p-4 flex-col">
       <div className="text-foreground">
         {icon}
       </div>
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-2">
         <h2 className="text-foreground text-base font-bold leading-tight">
           {title}
         </h2>

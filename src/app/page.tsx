@@ -1,106 +1,81 @@
-import DescriptionContainer from "./_components/DescriptionContainer";
-import DescriptionBox from "./_components/DescriptionBox";
+import DescriptionContainer from "../components/DescriptionContainer";
+import DescriptionBox from "../components/DescriptionBox";
 import BulbIcon from "~/components/icons/BulbIcon";
-import QuestionIcon from "~/components/icons/QuestionIcon";
-import LineIcon from "~/components/icons/LineIcon";
+import NoteIcon from "~/components/icons/NoteIcon";
 import Header from "../components/Header";
-import Bottom from "../components/Bottom";
+import Footer from "../components/Footer";
 import Hero from "./_components/Hero";
-import VisionIcon from "~/components/icons/VisionIcon";
-import HeartIcon from "~/components/icons/HeartIcon";
+import ThinkIcon from "~/components/icons/ThinkIcon";
 import SectionHeader from "../components/SectionHeader";
-import ImageCard from "~/components/ImageCard";
+import Image from "next/image";
 export default function Home() {
   return (
     <>
       {/* TailwindCSS를 사용한 Body 부분 */}
+      <Header />
       <div
         className="relative flex size-full min-h-screen flex-col bg-background group/design-root overflow-x-hidden"
         style={{ fontFamily: '"Plus Jakarta Sans", "Noto Sans", sans-serif' }}
       >
         <div className="layout-container flex h-full grow flex-col">
           {/* Header */}
-          <Header />
 
           {/* Main Section */}
-          <main className="flex flex-1 justify-center p-5">
-            <div className="layout-content-container flex flex-col max-w-[1200px] flex-1">
+          <main className="flex flex-1 justify-center px-6 py-4">
+            <div className="layout-content-container flex flex-col max-w-[1080px] flex-1">
               {/* Hero Section */}
-              <section className="@container flex flex-col gap-10">
+              <section className="flex flex-col gap-10 px-4 py-10 @container min-[700px]:h-dvh">
                 <Hero />
-                <SectionHeader
-                  title="Features"
-                />
-                {/* 3-Column Feature Section */}
-                <DescriptionContainer>
-                  <DescriptionBox
-                    title="Daily Questionsasd"
-                    content="hello"
-                    icon={<QuestionIcon />}
+                <div className="flex flex-col gap-10">
+                  <SectionHeader
+                    title="Unlock your potential with Coura"
                   />
-                  <DescriptionBox
-                    title="Personalized Insights"
-                    content="Get personalized insights based on your responses"
-                    icon={<BulbIcon />}
-                  />
-                  <DescriptionBox
-                    title="Progress Tracking"
-                    content="Track your journey and see how you've grown"
-                    icon={<LineIcon />}
-                  />
-                </DescriptionContainer>
+                  {/* 고객이 얻을 수 있는 가치 */}
+                  <DescriptionContainer p={0}>
+                    <DescriptionBox
+                      title="Self awareness"
+                      content="현재의 나자신을 알고싶고, 성장시킬수있음"
+                      icon={<ThinkIcon />}
+                      />
+                    <DescriptionBox
+                      title="brighter future"
+                      content="미래의 내가 좋아져있을거고 way of thinking, corevalues를 얻어서 미래가 밝아진다 이런느낌"
+                      icon={<BulbIcon />}
+                      />
+                    <DescriptionBox
+                      title="Thought Journal(Diary)"
+                      content="생각의 기록으로 일기처럼 쓸수있다"
+                      icon={<NoteIcon />}
+                      />
+                  </DescriptionContainer>
+                </div>
               </section>
 
-
-              {/* Vision & Values Section */}
-              {/* <section className="flex flex-col gap-10 px-4 py-10 @container">
+              <section className="flex flex-col gap-10 px-4 py-10 @container h-dvh bg-sky-200">
                 <SectionHeader
-                  title="Our Vision &amp; Values"
-                  content="We are committed to providing a platform for self-discovery and personal growth. Our values guide our decisions and interactions with our community."
+                  title="The journey of self-awareness with Coura"//여기서 game이라고 언질한번 하기
                 />
-                <DescriptionContainer p={0}>
-                  <DescriptionBox
-                    title="Vision"
-                    content="To create a platform that fosters self-discovery and personal growth."
-                    icon={<VisionIcon />}
-                  />
-                  <DescriptionBox
-                    title="Values"
-                    content="Authenticity, Empathy, and Continuous Improvement."
-                    icon={<HeartIcon />}
-                  />
-                </DescriptionContainer>
-              </section> */}
-
-              {/* App Demo Section */}
-              <section className="flex flex-col gap-10 px-4 py-10 @container">
-                <SectionHeader
-                  title="App Demo"
-                  content="Take a sneak peek at our app's intuitive design and seamless user experience."
-                />
-                <DescriptionContainer p={0}>
-                  {/* Feature 1 */}
-                  <ImageCard
-                    title="Feature 1"
-                    description="Description for Feature 1"
-                    img="capi2.jpeg"
-                  />
-                  <ImageCard
-                    title="Feature 1"
-                    description="Description for Feature 1"
-                    img="capi2.jpeg"
-                  />
-                  <ImageCard
-                    title="Feature 1"
-                    description="Description for Feature 1"
-                    img="capi2.jpeg"
-                  />
-                </DescriptionContainer>
+                <div className="flex h-full flex-row gap-10 max-[700px]:flex-col max-[700px]:items-center">
+                  <div className="flex-1 h-full">
+                    asdadsadads
+                  </div>
+                  <div className="flex-1 max-w-[350px] rounded-xl max-[700px]:min-h-[350px] [@media (min-width:864px)]:w-full">
+                    <Image
+                      src="/images/home.png"
+                      alt="asd"
+                      width={350}
+                      height={350}
+                      className="object-contain rounded-xl"
+                    />
+                  </div>    
+                </div>
               </section>
+              {/* review section */}
             </div>
           </main>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

@@ -9,20 +9,14 @@ export default function SectionHeader({
   content,
 }: SectionProps) {
   return (
-    // 공백 없이 [container-type:inline-size] 로 수정
-    // todo 나중에 미디어쿼리 
-    <div className="flex flex-col gap-4 @container [container-type:inline-size]">
+    <div className="flex w-full flex-col items-center gap-4 @container [container-type:inline-size]">
       <h1
         className="
           text-[foreground]
           tracking-light
-          text-[32px]
+          text-[28px]
           font-bold
           leading-tight
-          @[480px]:text-4xl
-          @[480px]:leading-tight
-          @[480px]:tracking-[-0.033em]
-          max-w-[720px]
         "
       >
         {title}

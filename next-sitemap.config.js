@@ -22,7 +22,6 @@ module.exports = {
       loc: path,
       changefreq: changefreq,
       priority: priority,
-      lastmod: new Date().toISOString(),//?
     }
   },
   robotsTxtOptions: {
