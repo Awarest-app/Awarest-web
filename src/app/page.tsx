@@ -22,10 +22,10 @@ export default function Home() {
           {/* Header */}
 
           {/* Main Section */}
-          <main className="flex flex-1 justify-center py-4 w-full items-center">
+          <main className="flex flex-col flex-1 justify-center py-4 w-full items-center">
             <div className="layout-content-container flex flex-col flex-1 w-full items-center">
               {/* Hero Section */}
-              <section className="flex flex-col gap-10 px-4 py-10 @container max-w-[1080px] min-[700px]:h-dvh">
+              <section className="flex flex-col gap-10 px-4 py-10 @container max-w-[1080px] min-h-dvh">
                 <Hero />
                 <div className="flex flex-col gap-10">
                   <SectionHeader
@@ -52,7 +52,7 @@ export default function Home() {
                 </div>
               </section>
               {/* 그라데이션bg */}
-              <div className="flex flex-col w-full px-4 pt-20 bg-[#E5EFED]">
+              <div className="hihi flex flex-col w-full px-4 pt-20 bg-[#E5EFED]">
                 <SectionHeader
                   title="The journey of self-awareness with Coura"//여기서 game이라고 언질한번 하기
                 />
@@ -85,3 +85,6 @@ export default function Home() {
     </>
   );
 }
+
+// [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/junhyeong/Documents/Coura/coura_web/.next/cache/webpack/server-development/1.pack.gz_' -> '/Users/junhyeong/Documents/Coura/coura_web/.next/cache/webpack/server-development/1.pack.gz'
+// <w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/junhyeong/Documents/Coura/coura_web/.next/cache/webpack/client-development/2.pack.gz_' -> '/Users/junhyeong/Documents/Coura/coura_web/.next/cache/webpack/client-development/2.pack.gz'
