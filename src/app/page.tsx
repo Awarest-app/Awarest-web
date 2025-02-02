@@ -25,7 +25,7 @@ export default function Home() {
           <main className="flex flex-col flex-1 justify-center py-4 w-full items-center">
             <div className="layout-content-container flex flex-col flex-1 w-full items-center">
               {/* Hero Section */}
-              <section className="flex flex-col gap-10 px-4 py-10 @container max-w-[1080px] min-h-dvh">
+              <section className="flex flex-col gap-10 px-4 py-10 @container max-w-[1080px]">
                 <Hero />
                 <div className="flex flex-col gap-10">
                   <SectionHeader
