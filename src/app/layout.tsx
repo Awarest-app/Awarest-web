@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Generasadasddted by create next app",
   keywords: 'Next.js, 웹 개발, SEO',
   icons: {
-    icon: "/images/logo.png",//경로 이렇게
+    icon: "/images/coura-logo.png",//경로 이렇게
   },
   // robots: 'hihi, alsa',
   //todo

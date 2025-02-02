@@ -9,7 +9,7 @@ export default function Header() {
         <button className='flex items-center gap-4 w-max h-max hover:cursor-pointer'>
           <div className="size-10">
             <Image
-              src="/images/logo.png"
+              src="/images/coura-logo.png"
               alt="Coura Logo"
               width={40}
               height={40}
