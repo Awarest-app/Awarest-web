@@ -6,17 +6,48 @@
   --background: #FAFAFA;
   --foreground: #171717;
   --primary: #0D9488;
+  --gradientStart: #E5EFED;
+  --gradientEnd: #82C3BD;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    /* --background: #0a0a0a;
-    --foreground: #ededed; */
+    --background: #121212;
+    --foreground: #FAFAFA;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+#slide-0:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+#slide-1:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#slide-2:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+#slide-0:checked ~ .navigation label[for="slide-0"] {
+  background-color: var(--primary); /* bg-primary 색상 값 */
+  color: #FAFAFA; /* 텍스트 색상 */
+}
+
+/* slide-1이 체크된 경우 */
+#slide-1:checked ~ .navigation label[for="slide-1"] {
+  background-color: var(--primary);
+  color: #FAFAFA;
+}
+
+/* slide-2가 체크된 경우 */
+#slide-2:checked ~ .navigation label[for="slide-2"] {
+  background-color: var(--primary);
+  color: #FAFAFA;
 }

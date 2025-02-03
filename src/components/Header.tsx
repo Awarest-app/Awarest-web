@@ -15,7 +15,7 @@ export default function Header() {
               height={40}
             />
           </div>
-          <h2 className="text-foreground text-lg font-bold leading-tight tracking-[-0.022em]">
+          <h2 className="text-primary text-lg font-bold leading-tight tracking-[-0.022em]">
             Coura
           </h2>
         </button>
