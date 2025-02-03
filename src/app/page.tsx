@@ -7,7 +7,6 @@ import Footer from "../components/Footer";
 import Hero from "./_components/Hero";
 import ThinkIcon from "~/components/icons/ThinkIcon";
 import SectionHeader from "../components/SectionHeader";
-import AppGuide from "./_components/AppGuide";
 import GuideSection from './_components/GuideSection';
 import SmallButton from "~/components/SmallButton";
 
@@ -74,7 +73,6 @@ export default function Home() {
                 />
                 <SmallButton />
               </div>
-              {/* download 버튼 */}
               {/* review section */}
             </div>
           </main>

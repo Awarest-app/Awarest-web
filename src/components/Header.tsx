@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import SmallButton from './SmallButton';
 
 export default function Header() {
   return (
@@ -21,12 +22,14 @@ export default function Header() {
         </button>
         </Link>
       </div>
-      <button
-        className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary text-foreground text-sm font-bold leading-normal tracking-[0.015em] 
-        transition-transform active:scale-[0.97] hover:brightness-[0.85]"
-      >
-        <span className="truncate text-[#fafafa]">Download Now</span>
-      </button>
+      <div className='flex items-center gap-5'>
+        <Link href={'/about'}>
+          <button className='text-base font-bold flex items-center gap-4 w-max h-max hover:cursor-pointer'>
+            About
+          </button>
+        </Link>
+        <SmallButton />
+      </div>
   </header>
   );
 }

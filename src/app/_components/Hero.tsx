@@ -21,14 +21,15 @@ export default function Hero() {
                 className="max-[700px]:w-48 flex w-full min-w-[84px] min-h-[48px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 [@media (min-width:480px)]:h-12 [@media (min-width:480px)]:px-5 bg-primary text-foreground text-sm font-bold leading-normal tracking-[0.015em] [@media (min-width:480px)]:text-base [@media (min-width:480px)]:font-bold [@media (min-width:480px)]:leading-normal [@media (min-width:480px)]:tracking-[0.015em] transition-transform active:scale-[0.99] hover:brightness-[0.85]"
               >
                 <span className="text-[16px] truncate text-[#FAFAFA]">
-                  Download Now
+                  Coming soon
                 </span>
               </button>
             </div>
           </div>
           <div className="relative flex-1 rounded-xl max-[700px]:min-h-[350px] [@media (min-width:480px)]:min-w-[400px] [@media (min-width:864px)]:w-full">
             <Image
-              src="/images/coura-mockup.png"
+              // src="/images/coura-mockup.png"
+              src="/images/mockup.png"
               alt="Hero Image"
               fill
               className="object-fill rounded-xl"
