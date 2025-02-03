@@ -28,7 +28,7 @@ export default function Hero() {
           </div>
           <div className="relative flex-1 rounded-xl max-[700px]:min-h-[350px] [@media (min-width:480px)]:min-w-[400px] [@media (min-width:864px)]:w-full">
             <Image
-              src="/images/mock1.png"
+              src="/images/coura-mockup.png"
               alt="Hero Image"
               fill
               className="object-fill rounded-xl"

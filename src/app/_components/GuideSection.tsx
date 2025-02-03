@@ -66,7 +66,7 @@ export default function GuideSection() {
                 htmlFor={`slide-${idx}`}
                 className="mt-20 max-[740px]:mt-4 max-[740px]:mb-[80px] w-[110px] max-h-[40px] px-1 py-2 m-2 rounded-full
                 cursor-pointer transition-colors duration-700 text-center
-                bg-background font-semibold border border-primary
+                text-[#171717] bg-[#FAFAFA] font-semibold border border-primary
                 mb-[200px]"
               >
                 {idx === 0 && "Questions"}

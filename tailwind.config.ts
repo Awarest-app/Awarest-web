@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
         primary: "var(--primary)",
       },
+      backgroundImage: {
+        'gradient-to-b': "linear-gradient(to bottom, var(--gradientStart) 40%, var(--gradientEnd) 100%)"
+      }
     },
   },
   safelist: [

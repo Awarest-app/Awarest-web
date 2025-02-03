@@ -9,6 +9,7 @@ import ThinkIcon from "~/components/icons/ThinkIcon";
 import SectionHeader from "../components/SectionHeader";
 import AppGuide from "./_components/AppGuide";
 import GuideSection from './_components/GuideSection';
+import SmallButton from "~/components/SmallButton";
 
 export default function Home() {
   return (
@@ -52,7 +53,7 @@ export default function Home() {
                 </div>
               </section>
               {/* 그라데이션bg */}
-              <div className="hihi flex flex-col w-full pt-20 bg-[#E5EFED]">
+              <div className="flex flex-col w-full pt-20 bg-gradient-to-b">
                 {/* Section Header */}
                 <SectionHeader
                   title={
@@ -61,51 +62,17 @@ export default function Home() {
                       <span className="text-primary">Coura</span>
                     </div>
                   }
+                  color="[#171717]"
                 />
                 <GuideSection />
-                {/* <div>
-                  <div className="overflow-hidden relative min-h-[70vh]">
-                    <div
-                      className="flex transition-transform duration-700 ease-in-out"
-                      style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-                    >
-                      {guides.map((guide, idx) => (
-                        <div key={idx} className="min-w-full">
-                          <AppGuide {...guide} />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="flex justify-center max-[740px]:pt-10 max-[440px]:pt-0">
-                    {guides.map((_, idx) => (
-                      <button
-                        key={idx}
-                        onClick={() => setActiveIndex(idx)}
-                        className={`w-[110px] max-h-[40px] px-1 py-2 m-2 rounded-full transition-colors duration-700 ${
-                          activeIndex === idx
-                            ? 'bg-primary text-[#FAFAFA] font-semibold'
-                            : 'bg-background text-foreground font-semibold'
-                        }`}
-                      >
-                        {idx == 0 && ("Questions")}
-                        {idx == 1 && ("Answers")}
-                        {idx == 2 && ("Diary")}
-                      </button>
-                    ))}
-                  </div>
-                </div> */}
               </div>
-              <div className='flex flex-col w-full items-center bg-sky-200'>
+              <div className='pt-20 flex flex-col gap-10 w-full items-center'>
                 <SectionHeader
                   title="Download Coura"
-                  content='asdads'
+                  content="Let's start your journey with Coura"
+                  color="[#171717]"
                 />
-                <button
-                  className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary text-foreground text-sm font-bold leading-normal tracking-[0.015em] 
-                  transition-transform active:scale-[0.97] hover:brightness-[0.85]"
-                >
-                  <span className="truncate text-[#fafafa]">Download Now</span>
-                </button>
+                <SmallButton />
               </div>
               {/* download 버튼 */}
               {/* review section */}

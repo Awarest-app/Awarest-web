@@ -6,14 +6,16 @@
   --background: #FAFAFA;
   --foreground: #171717;
   --primary: #0D9488;
+  --gradientStart: #E5EFED;
+  --gradientEnd: #82C3BD;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    /* --background: #0a0a0a;
-    --foreground: #ededed; */
+    --background: #121212;
+    --foreground: #FAFAFA;
   }
-}
+} */
 
 body {
   color: var(--foreground);
