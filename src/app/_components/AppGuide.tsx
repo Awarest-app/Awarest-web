@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 
 interface AppGuideProps {
@@ -16,9 +17,9 @@ export default function AppGuide({
   children,
 }: AppGuideProps) {
   return (
-    <section className="flex flex-col items-center w-full gap-20 py-20 @container h-dvh">
+    <section className="flex flex-col items-center w-full gap-20 px-6 @container">
       {children}
-    <div className="flex w-full max-w-[880px] min-[701px]:justify-between flex-row gap-10 max-[740px]:flex-col max-[740px]:items-center">
+    <div className="flex w-full max-w-[880px] min-[701px]:justify-between flex-row gap-10 max-[440px]:gap-1 max-[740px]:flex-col max-[740px]:items-center">
       <div className="flex flex-col max-w-[350px] items-center gap-4 min-[701px]:justify-center max-[740px]:w-full">
         <h2
           className="
@@ -33,7 +34,8 @@ export default function AppGuide({
         <p className="
         text-[#171717]
           text-base
-          font-normal
+          text-[20px]
+          font-medium
           leading-normal"
         >
           {content}

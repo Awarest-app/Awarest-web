@@ -9,10 +9,12 @@ export default function Hero() {
         <div className="flex gap-10 max-[700px]:flex-col max-[700px]:gap-10 h-full">
           <div className="flex flex-1 flex-col gap-4 text-left min-h-[400px] max-[700px]:items-center">
             <h1 className="text-foreground text-4xl font-black leading-tight tracking-[-0.033em] [@media (min-width:480px)]:text-5xl [@media (min-width:480px)]:font-black [@media (min-width:480px)]:leading-tight [@media (min-width:480px)]:tracking-[-0.033em]">
-            Boost Your Self-Awareness: Answer 3 Powerful Questions Daily and Grow into Your Best Self!
+              Daily Questions for Self Awareness,
+                Stronger Habits,
+              and a Resilient Mindset
             </h1>
             <h2 className="text-foreground text-xl font-normal leading-normal [@media (min-width:480px)]:text-base [@media (min-width:480px)]:font-normal [@media (min-width:480px)]:leading-normal">
-            Use AI-driven structured questions to organize your thoughts and shape your values. With gamification, it's fun and engaging and you can even use it as a personal journal!
+            Answer fun, AI-driven questions daily, track your growth in a unique self-reflection diary, and build resilience through gamification.
             </h2>
             <div className="flex mt-auto px-4 w-full items-center justify-center">
               <button

@@ -1,6 +1,8 @@
+import React from "react";
+
 /* Section.tsx (예시) */
 interface SectionProps {
-  title?: string;
+  title?: string | React.ReactNode;
   content?: string;
 }
 
@@ -9,7 +11,7 @@ export default function SectionHeader({
   content,
 }: SectionProps) {
   return (
-    <div className="flex w-full flex-col items-center gap-4 @container [container-type:inline-size]">
+    <div className="flex flex-col items-center gap-4 @container [container-type:inline-size]">
       <h1
         className="
           text-[foreground]

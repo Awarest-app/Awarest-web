@@ -8,11 +8,11 @@ import Hero from "./_components/Hero";
 import ThinkIcon from "~/components/icons/ThinkIcon";
 import SectionHeader from "../components/SectionHeader";
 import AppGuide from "./_components/AppGuide";
+import GuideSection from './_components/GuideSection';
 
 export default function Home() {
   return (
     <>
-      {/* TailwindCSS를 사용한 Body 부분 */}
       <Header />
       <div
         className="relative flex size-full min-h-screen flex-col bg-background group/design-root overflow-x-hidden"
@@ -29,53 +29,85 @@ export default function Home() {
                 <Hero />
                 <div className="flex flex-col gap-10">
                   <SectionHeader
-                    title="Unlock your potential with Coura"
+                    title="How Coura Helps You Grow"
                   />
                   {/* 고객이 얻을 수 있는 가치 */}
                   <DescriptionContainer p={0}>
                     <DescriptionBox
                       title="Self awareness"
-                      content="Gain deeper self-awareness and unlock your personal growth."
+                      content="Structured questions guide you to reflect and discover more about yourself."
                       icon={<ThinkIcon />}
                       />
                     <DescriptionBox
-                      title="brighter future"
-                      content="Your future self will thank you—develop a strong way of thinking and core values to create a brighter tomorrow."
+                      title="Resilience"
+                      content="Self-awareness strengthens resilience by helping you recognize and regulate your emotions, making it easier to solve challenges quickly"
                       icon={<BulbIcon />}
                       />
                     <DescriptionBox
-                      title="Thought Journal(Diary)"
-                      content="A unique journal filled with your own thoughts and insights."
+                      title="Your thought note"
+                      content="A personal note designed for your unique thoughts and insights."
                       icon={<NoteIcon />}
                       />
                   </DescriptionContainer>
                 </div>
               </section>
               {/* 그라데이션bg */}
-              <div className="hihi flex flex-col w-full px-4 pt-20 bg-[#E5EFED]">
+              <div className="hihi flex flex-col w-full pt-20 bg-[#E5EFED]">
+                {/* Section Header */}
                 <SectionHeader
-                  title="The journey of self-awareness with Coura"//여기서 game이라고 언질한번 하기
+                  title={
+                    <div className="mb-10 text-center">
+                      The journey of Self awareness with{' '}
+                      <span className="text-primary">Coura</span>
+                    </div>
+                  }
                 />
-                <AppGuide
-                  title="Daily questions"
-                  content="Every day, get three thought-provoking questions designed to enhance your self-awareness. Powered by AI, these questions are tailored and randomly selected just for you—making personal growth feel natural and engaging."
-                  image="/images/coura-daily-questions.png"
-                  alt="Daily questions screen in the Coura app helping users gain self-awareness"
-                >
-                </AppGuide>
-                <AppGuide
-                  title="Response"
-                  content="Each main question comes with 2 to 5 carefully selected sub-questions, powered by AI. By answering these, you’ll naturally gain deeper insights into the main question—enhancing your self-awareness and personal growth."
-                  image="/images/coura-response.png"
-                  alt="Response screen in the Coura app where users gain self-awareness"
-                />
-                <AppGuide
-                  title="Dairy"
-                  content="Your answers are saved and can be edited anytime. Revisit them later to reflect, refine your thoughts, and track your personal growth. This is more than just a journal—it’s your own self-awareness diary."
-                  image="/images/coura-dairy.png"
-                  alt="Diary recording screen in the Coura app where users reflect and gain self-awareness"
-                />
+                <GuideSection />
+                {/* <div>
+                  <div className="overflow-hidden relative min-h-[70vh]">
+                    <div
+                      className="flex transition-transform duration-700 ease-in-out"
+                      style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+                    >
+                      {guides.map((guide, idx) => (
+                        <div key={idx} className="min-w-full">
+                          <AppGuide {...guide} />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex justify-center max-[740px]:pt-10 max-[440px]:pt-0">
+                    {guides.map((_, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setActiveIndex(idx)}
+                        className={`w-[110px] max-h-[40px] px-1 py-2 m-2 rounded-full transition-colors duration-700 ${
+                          activeIndex === idx
+                            ? 'bg-primary text-[#FAFAFA] font-semibold'
+                            : 'bg-background text-foreground font-semibold'
+                        }`}
+                      >
+                        {idx == 0 && ("Questions")}
+                        {idx == 1 && ("Answers")}
+                        {idx == 2 && ("Diary")}
+                      </button>
+                    ))}
+                  </div>
+                </div> */}
               </div>
+              <div className='flex flex-col w-full items-center bg-sky-200'>
+                <SectionHeader
+                  title="Download Coura"
+                  content='asdads'
+                />
+                <button
+                  className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary text-foreground text-sm font-bold leading-normal tracking-[0.015em] 
+                  transition-transform active:scale-[0.97] hover:brightness-[0.85]"
+                >
+                  <span className="truncate text-[#fafafa]">Download Now</span>
+                </button>
+              </div>
+              {/* download 버튼 */}
               {/* review section */}
             </div>
           </main>
