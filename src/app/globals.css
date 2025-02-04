@@ -36,17 +36,15 @@ body {
 }
 
 #slide-0:checked ~ .navigation label[for="slide-0"] {
-  background-color: var(--primary); /* bg-primary 색상 값 */
-  color: #FAFAFA; /* 텍스트 색상 */
+  background-color: var(--primary);
+  color: #FAFAFA; 
 }
 
-/* slide-1이 체크된 경우 */
 #slide-1:checked ~ .navigation label[for="slide-1"] {
   background-color: var(--primary);
   color: #FAFAFA;
 }
 
-/* slide-2가 체크된 경우 */
 #slide-2:checked ~ .navigation label[for="slide-2"] {
   background-color: var(--primary);
   color: #FAFAFA;
