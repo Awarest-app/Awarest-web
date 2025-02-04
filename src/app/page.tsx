@@ -9,10 +9,22 @@ import ThinkIcon from "~/components/icons/ThinkIcon";
 import SectionHeader from "../components/SectionHeader";
 import GuideSection from './_components/GuideSection';
 import SmallButton from "~/components/SmallButton";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHF7197TK9"></script>
+        <script>{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+
+          gtag('config', 'G-DHF7197TK9');
+          `}
+        </script>
+      </Head>
       <Header />
       <div
         className="relative flex size-full min-h-screen flex-col bg-background group/design-root overflow-x-hidden"
