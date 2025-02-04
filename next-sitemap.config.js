@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  outDir: './public',
+  outDir: 'out',
   siteUrl: process.env.SITE_URL,
   autoLastmod: true,
   generateRobotsTxt: true, // (optional)
