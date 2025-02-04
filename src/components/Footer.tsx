@@ -46,7 +46,9 @@ export default function Footer() {
           <p>
             E-mail: team@withcoura.com
           </p>
-          <Link href={process.env.PRIVACY_URL || '404'}>
+          <Link href={process.env.PRIVACY_URL || '404'}
+            target="_blank"
+          >
             privacy policy
           </Link>
         </div>
