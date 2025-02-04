@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap && mv public/sitemap*.xml out/ && mv public/robots.txt out/robots.txt"
   },
   "dependencies": {
     "next": "15.1.6",
