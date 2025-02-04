@@ -29,7 +29,7 @@ export default function GuideSection() {
       {
         title: "A personal note",
         content:
-          "Your answers are saved and can be edited anytime. Revisit them later to reflect, refine your thoughts, and track your personal growth. This is more than just a journal—it’s your own self-awareness diary.",
+          "Your answers are saved and can be edited anytime. Revisit them later to reflect, refine your thoughts, and track your personal growth. This is more than just a journal It's your own self awareness diary.",
         image: "/images/coura-notes.png",
         alt: "Diary recording screen in the Coura app where users reflect and gain self-awareness",
       },

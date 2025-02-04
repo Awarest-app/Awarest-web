@@ -13,14 +13,16 @@ export default function About() {
     <>
       <Head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHF7197TK9"></script>
-        <script>{`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-
-          gtag('config', 'G-DHF7197TK9');
-          `}
-        </script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-DHF7197TK9');
+            `,
+          }}
+        />
       </Head>
       <Header />
       <div
