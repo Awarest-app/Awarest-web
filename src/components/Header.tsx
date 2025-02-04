@@ -25,7 +25,7 @@ export default function Header() {
       <div className='flex items-center gap-5'>
         <Link href={'/about'}>
           <button className='text-base font-bold flex items-center gap-4 w-max h-max hover:cursor-pointer'>
-            About
+            About us
           </button>
         </Link>
         <SmallButton />

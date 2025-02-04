@@ -21,7 +21,7 @@ export default function SectionHeader({
       >
         {title}
       </h1>
-      <p className="text-foreground text-[18px] text-base font-normal leading-normal max-w-[720px]">
+      <p className="text-foreground text-[19px] text-base font-normal leading-normal max-w-[720px]">
         {content}
       </p>
     </div>

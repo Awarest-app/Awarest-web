@@ -6,11 +6,11 @@ import Youtube from '../../public/icons/youtube.svg';
 export default function Footer() {
   return (
     // instagram, email
-    <footer className="mt-10 flex items-center whitespace-nowrap border-b border-solid border-b-[#e8f3f0] px-12 py-3">
+    <footer className="mt-10 flex items-center whitespace-nowrap border-t border-solid border-b-[#e8f3f0] px-12 py-3">
       <div className="flex items-center gap-4 text-foreground">
         <Link href="/">
           <button className='flex items-center gap-4 w-max h-max hover:cursor-pointer'>
-            <div>
+            <div className='min-w-[28px] min-h-[28px]'>
               <Image
                 src="/images/coura-logo.png"
                 alt="Coura Logo"
@@ -20,17 +20,18 @@ export default function Footer() {
             </div>
           </button>
         </Link>
-        <div className='flex items-center gap-4 text-sm font-normal'>
-          
+        <div className='flex items-center gap-4 text-sm font-normal flex-wrap'>
           <Link href={process.env.INSTAGRAM_URL || '404'}
             target="_blank"
           >
-            <Image
-              src={Insta}
-              alt="Instagram logo"
-              width={24}
-              height={24}
-            />
+            <div className='min-w-[24px] min-h-[24px]'>
+              <Image
+                src={Insta}
+                alt="Instagram logo"
+                width={24}
+                height={24}
+              />
+            </div>
           </Link>
           <Link href={process.env.YOUTUBE_URL || '404'}
             target="_blank"
@@ -45,12 +46,9 @@ export default function Footer() {
           <p>
             E-mail: team@withcoura.com
           </p>
-          <button>
+          <Link href={process.env.PRIVACY_URL || '404'}>
             privacy policy
-          </button>
-          <button>
-            terms
-          </button>
+          </Link>
         </div>
       </div>
   </footer>
