@@ -24,12 +24,10 @@ export const metadata: Metadata = {
     shortcut: "/images/coura-logo.png",
   },
   alternates: {
+    canonical: "https://www.withcoura.com",
     languages: {
       "en-US": "https://www.withcoura.com",
     },
-  },
-  verification: {
-    google: "",
   },
   robots: {
     index: true,
