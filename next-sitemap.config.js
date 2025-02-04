@@ -32,10 +32,5 @@ module.exports = {
         disallow: ["/_next", "/api"],
       },
     ],
-    additionalSitemaps: [
-      "https://yourwebsite.com/sitemap-pages.xml", // 일반 페이지
-      "https://yourwebsite.com/sitemap-blog.xml", // 블로그 게시글
-      "https://yourwebsite.com/sitemap-products.xml", // 제품 페이지
-    ],
   }
 }

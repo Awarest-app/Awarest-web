@@ -82,6 +82,3 @@ export default function Home() {
     </>
   );
 }
-
-// [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/junhyeong/Documents/Coura/coura_web/.next/cache/webpack/server-development/1.pack.gz_' -> '/Users/junhyeong/Documents/Coura/coura_web/.next/cache/webpack/server-development/1.pack.gz'
-// <w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/junhyeong/Documents/Coura/coura_web/.next/cache/webpack/client-development/2.pack.gz_' -> '/Users/junhyeong/Documents/Coura/coura_web/.next/cache/webpack/client-development/2.pack.gz'

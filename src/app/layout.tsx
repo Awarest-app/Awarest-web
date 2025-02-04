@@ -13,14 +13,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Coura - Create your own aura",
-  description: "Generasadasddted by create next app",
-  keywords: 'Next.js, 웹 개발, SEO',
+  title: "Coura: Build Self Awareness & Resilience with Daily",
+  description: "We provide three daily questions with structured sub-questions to enhance self awareness and strengthen resilience. Through gamification and tracking, growth becomes engaging and measurable",
+  keywords: "Coura, self awareness, resilience, daily questions, personal growth, mindfulness, habit tracking, self improvement, self discovery\
+  note, AI",
   icons: {
     icon: "/images/coura-logo.png",//경로 이렇게
+    apple: "/images/coura-logo.png",
+    shortcut: "/images/coura-logo.png",
   },
-  // robots: 'hihi, alsa',
-  //todo
+  alternates: {
+    languages: {
+      "en-US": "https://www.withcoura.com",
+    },
+  },
+  verification: {
+    google: "",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
