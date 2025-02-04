@@ -6,11 +6,22 @@ import DescriptionBox from '~/components/DescriptionBox';
 import ThinkIcon from '~/components/icons/ThinkIcon';
 import BulbIcon from '~/components/icons/BulbIcon';
 import NoteIcon from '~/components/icons/NoteIcon';
-
+import Head from 'next/head';
 
 export default function About() {
   return (
     <>
+      <Head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHF7197TK9"></script>
+        <script>{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+
+          gtag('config', 'G-DHF7197TK9');
+          `}
+        </script>
+      </Head>
       <Header />
       <div
         className="relative flex size-full items-center min-h-screen flex-col bg-background group/design-root overflow-x-hidden"
