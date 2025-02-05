@@ -1,17 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Awarest: Build Self Awareness & Resilience with Daily",
@@ -19,9 +8,9 @@ export const metadata: Metadata = {
   keywords: "Awarest, self awareness, resilience, daily questions, personal growth, mindfulness, habit tracking, self improvement, self discovery\
   note, AI",
   icons: {
-    icon: "/images/Awarest-logo.png",//경로 이렇게
-    apple: "/images/Awarest-logo.png",
-    shortcut: "/images/Awarest-logo.png",
+    icon: "/images/awarest-logo.png",//경로 이렇게
+    apple: "/images/awarest-logo.png",
+    shortcut: "/images/awarest-logo.png",
   },
   alternates: {
     canonical: "https://www.getawarest.com",
@@ -62,7 +51,6 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
