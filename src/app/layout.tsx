@@ -14,19 +14,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Coura: Build Self Awareness & Resilience with Daily",
+  title: "Awarest: Build Self Awareness & Resilience with Daily",
   description: "We provide three daily questions with structured sub-questions to enhance self awareness and strengthen resilience. Through gamification and tracking, growth becomes engaging and measurable",
-  keywords: "Coura, self awareness, resilience, daily questions, personal growth, mindfulness, habit tracking, self improvement, self discovery\
+  keywords: "Awarest, self awareness, resilience, daily questions, personal growth, mindfulness, habit tracking, self improvement, self discovery\
   note, AI",
   icons: {
-    icon: "/images/coura-logo.png",//경로 이렇게
-    apple: "/images/coura-logo.png",
-    shortcut: "/images/coura-logo.png",
+    icon: "/images/Awarest-logo.png",//경로 이렇게
+    apple: "/images/Awarest-logo.png",
+    shortcut: "/images/Awarest-logo.png",
   },
   alternates: {
-    canonical: "https://www.withcoura.com",
+    canonical: "https://www.getawarest.com",
     languages: {
-      "en-US": "https://www.withcoura.com",
+      "en-US": "https://www.getawarest.com",
     },
   },
   robots: {
@@ -46,7 +46,7 @@ export default function RootLayout({
         {/* Google Analytics */}
         <Script
           strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-DHF7197TK9"
+          src="https://www.googletagmanager.com/gtag/js?id=G-MMXRGV8P33"
         />
         <Script
           id="google-analytics"
@@ -56,7 +56,7 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-DHF7197TK9', { page_path: window.location.pathname });
+              gtag('config', 'G-MMXRGV8P33', { page_path: window.location.pathname });
             `,
           }}
         />

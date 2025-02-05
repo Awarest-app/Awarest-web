@@ -12,8 +12,8 @@ export default function Footer() {
           <button className='flex items-center gap-4 w-max h-max hover:cursor-pointer'>
             <div className='min-w-[28px] min-h-[28px]'>
               <Image
-                src="/images/coura-logo.png"
-                alt="Coura Logo"
+                src="/images/awarest-logo.png"
+                alt="Awarest Logo"
                 width={28}
                 height={28}
               />
@@ -44,7 +44,7 @@ export default function Footer() {
             />
           </Link>
           <p>
-            E-mail: team@withcoura.com
+            E-mail: team@getawarest.com
           </p>
           <Link href={process.env.PRIVACY_URL || '404'}
             target="_blank"

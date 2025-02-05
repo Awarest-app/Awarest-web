@@ -30,7 +30,7 @@ export default function Home() {
                 <Hero />
                 <div className="flex flex-col gap-10">
                   <SectionHeader
-                    title="How Coura Helps You Grow"
+                    title="How Awarest Helps You Grow"
                   />
                   {/* 고객이 얻을 수 있는 가치 */}
                   <DescriptionContainer p={0}>
@@ -41,7 +41,7 @@ export default function Home() {
                       />
                     <DescriptionBox
                       title="Resilience"
-                      content="Self-awareness strengthens resilience by helping you recognize and regulate your emotions, making it easier to solve challenges quickly"
+                      content="Self awareness strengthens resilience by helping you recognize and regulate your emotions, making it easier to solve challenges quickly"
                       icon={<BulbIcon />}
                       />
                     <DescriptionBox
@@ -59,7 +59,7 @@ export default function Home() {
                   title={
                     <div className="mb-10 text-center">
                       The journey of Self awareness with{' '}
-                      <span className="text-primary">Coura</span>
+                      <span className="text-primary">Awarest</span>
                     </div>
                   }
                   color="[#171717]"
@@ -68,8 +68,8 @@ export default function Home() {
               </div>
               <div className='pt-20 flex flex-col gap-10 w-full items-center'>
                 <SectionHeader
-                  title="Download Coura"
-                  content="Let's start your journey with Coura"
+                  title="Download Awarest"
+                  content="Let's start your journey with Awarest"
                   color="[#171717]"
                 />
                 <SmallButton />

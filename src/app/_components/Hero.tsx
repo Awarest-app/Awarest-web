@@ -14,7 +14,7 @@ export default function Hero() {
               and a Resilient Mindset
             </h1>
             <h2 className="text-foreground text-xl font-normal leading-normal [@media (min-width:480px)]:text-base [@media (min-width:480px)]:font-normal [@media (min-width:480px)]:leading-normal">
-            Answer fun, AI-driven questions daily, track your growth in a unique self-reflection diary, and build resilience through gamification.
+            Answer fun, AI-driven questions daily, track your growth in a unique self reflection diary, and build resilience through gamification.
             </h2>
             <div className="flex mt-auto px-4 w-full items-center justify-center">
               <button
@@ -28,8 +28,8 @@ export default function Hero() {
           </div>
           <div className="relative flex-1 rounded-xl max-[700px]:min-h-[350px] [@media (min-width:480px)]:min-w-[400px] [@media (min-width:864px)]:w-full">
             <Image
-              src="/images/coura-app-mockup.png"
-              alt="coura app mockup image showing the app interface"
+              src="/images/awarest-app-mockup.png"
+              alt="Awarest app mockup image showing the app interface"
               fill
               className="object-fill rounded-xl"
             />

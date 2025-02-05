@@ -24,7 +24,7 @@ export default function About() {
                   People have an innate desire to understand themselves.
                   Yet, no personality test can truly capture who they are.
                   That's why many turn to meditation to observe their thoughts or use screen lock apps
-                  to limit phone usage and create time for self-reflection.
+                  to limit phone usage and create time for self reflection.
                   However, meditation takes years to master, and screen locks only address the surface of the problem
                 "
             />
@@ -32,7 +32,7 @@ export default function About() {
           <section className="flex flex-col gap-10 px-4 py-10 w-full">
             <SectionHeader
               title="Solution"
-              content="We provide three daily questions, each with structured sub-questions designed to enhance self-awareness,
+              content="We provide three daily questions, each with structured sub-questions designed to enhance self awareness,
               strengthen resilience, and help users gain a deeper understanding of themselves.
                 Through gamification, we make the process engaging and enjoyable.
                 By keeping a record, users can track their current state and
@@ -54,7 +54,7 @@ export default function About() {
                   />
                 <DescriptionBox
                   title="Resilience"
-                  content="Self-awareness strengthens resilience by helping you recognize and regulate your emotions, making it easier to solve challenges quickly"
+                  content="Self awareness strengthens resilience by helping you recognize and regulate your emotions, making it easier to solve challenges quickly"
                   icon={<BulbIcon />}
                   />
                 <DescriptionBox

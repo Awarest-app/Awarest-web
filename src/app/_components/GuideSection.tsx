@@ -15,23 +15,23 @@ export default function GuideSection() {
         content:
           "Every day, our recommendation algorithm delivers \
           three personalized questions, carefully selected just for you.",
-        image: "/images/coura-daily-questions.png",
-        alt: "Daily questions screen in the Coura app helping users gain self-awareness",
+        image: "/images/awarest-daily-questions.png",
+        alt: "Daily questions screen in the Awarest app helping users gain self awareness",
       },
       {
         title: "Answer",
         content:
           "Each question comes with 2 to 5 AI-assisted sub-questions, \
           guiding your thoughts and effectively enhancing your self awareness.",
-        image: "/images/coura-answer.png",
-        alt: "Response screen in the Coura app where users gain self awareness",
+        image: "/images/awarest-answer.png",
+        alt: "Response screen in the Awarest app where users gain self awareness",
       },
       {
         title: "A personal note",
         content:
           "Your answers are saved and can be edited anytime. Revisit them later to reflect, refine your thoughts, and track your personal growth. This is more than just a journal It's your own self awareness diary.",
-        image: "/images/coura-notes.png",
-        alt: "Diary recording screen in the Coura app where users reflect and gain self-awareness",
+        image: "/images/awarest-notes.png",
+        alt: "Diary recording screen in the Awarest app where users reflect and gain self awareness",
       },
     ];
   return (

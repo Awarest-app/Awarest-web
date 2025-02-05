@@ -10,14 +10,14 @@ export default function Header() {
         <button className='flex items-center gap-4 w-max h-max hover:cursor-pointer'>
           <div className="size-10">
             <Image
-              src="/images/coura-logo.png"
-              alt="Coura Logo"
+              src="/images/awarest-logo.png"
+              alt="Awarest Logo"
               width={40}
               height={40}
             />
           </div>
           <h2 className="text-primary text-lg font-bold leading-tight tracking-[-0.022em]">
-            Coura
+            Awarest
           </h2>
         </button>
         </Link>
