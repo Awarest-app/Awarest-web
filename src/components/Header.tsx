@@ -28,6 +28,7 @@ export default function Header() {
             About us
           </button>
         </Link>
+        {/* <a href="https://www.producthunt.com/posts/awarest?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-awarest" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=876968&theme=light&t=1739452618550" alt="Awarest - How&#0032;well&#0032;do&#0032;you&#0032;know&#0032;yourself&#0063; | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a> */}
         <SmallButton />
       </div>
   </header>

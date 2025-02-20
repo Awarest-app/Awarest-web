@@ -18,7 +18,7 @@ export default function Hero() {
             </h2>
             <div className="flex mt-auto px-4 w-full items-center justify-center">
               <Link
-                href="https://apple.co/3CD9rlx"
+                href="https://apps.apple.com/us/app/awarest-daily-self-awareness/id6741562490?ign-itscg=30200&ign-itsct=apps_box_link&mttnsubad=6741562490"
                 className="max-[700px]:w-48 flex w-full min-w-[84px] min-h-[48px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 [@media (min-width:480px)]:h-12 [@media (min-width:480px)]:px-5 bg-primary text-foreground text-sm font-bold leading-normal tracking-[0.015em] [@media (min-width:480px)]:text-base [@media (min-width:480px)]:font-bold [@media (min-width:480px)]:leading-normal [@media (min-width:480px)]:tracking-[0.015em] transition-transform active:scale-[0.99] hover:brightness-[0.85]"
                 target="_blank"
               >
